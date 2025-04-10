@@ -178,7 +178,7 @@ After corresponding OBJ files for generated in P1 and P2 folders, you can instal
 
 ## Citation
 
-If you find our work useful in your research, please consider citing:
+If you find our work helpful in your research, please consider citing the following paper:
 
 ```
 @article{manjotho2025coshmdm,
@@ -191,8 +191,13 @@ If you find our work useful in your research, please consider citing:
 ```
 
 
+## Acknowledgements
+This codebase is built upon the implementation of [InterGen](https://github.com/tr3e/InterGen), and we would like to thank the authors for making their work publicly available. We also gratefully acknowledge the contributions and inspiration from [TEMOS](https://github.com/Mathux/TEMOS) and [MDM](https://github.com/GuyTevet/motion-diffusion-model), which have been valuable references in the development of this project.
+
+
+
 
 ## Licenses
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
-All material is made available under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license. You can **use and adapt** the material for **non-commercial purposes**, as long as you give appropriate credit by **citing our paper** and **indicating any changes** that you've made.
+This repository is licensed under the [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license. You are free to **use, share, and modify** the content for **non-commercial use**, provided that you **cite our paper** and clearly **state any modifications** made.
