@@ -3,12 +3,12 @@
 
 The official PyTorch implementation of the paper [**"CoShMDM: Contact and Shape Aware Latent Motion Diffusion Model for Human Interaction Generation"**](https://alimanjotho.github.io/coshmdm/).
 
-Please visit our [**webpage**](https://alimanjotho.github.io/llm-fqk-t2m/) for more details.
+Please visit our [**webpage**](https://alimanjotho.github.io/coshmdm/) for more details.
 
 
 
 
-![teaser](assets/./assets/model.png)
+![teaser](./assets/model.png)
 
 
 
