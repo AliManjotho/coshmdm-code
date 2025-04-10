@@ -1,48 +1,50 @@
 # CoShMDM: Contact and Shape-Aware Latent Motion Diffusion Model for Human Interaction Generation
-### [Project Page](https://alimanjotho.github.io/coshmdm/) | [Ali Asghar Manjotho](https://github.com/AliManjotho), Tekie Tsegay Tewolde, Ramadhani Ally Duma, Zhendong Niu.</br>
+[Ali Asghar Manjotho](https://github.com/AliManjotho), Tekie Tsegay Tewolde, Ramadhani Ally Duma, Zhendong Niu.
 
+The official PyTorch implementation of the paper [**"CoShMDM: Contact and Shape Aware Latent Motion Diffusion Model for Human Interaction Generation"**](https://alimanjotho.github.io/coshmdm/).
 
-Official PyTorch implementation for [CoShMDM: Contact and Shape Aware Latent Motion Diffusion Model for Human Interaction Generation](https://alimanjotho.github.io/coshmdm/).
-
-
-<p float="left">
-  <img src="./assets/model.png" width="900" />
-</p>
+Please visit our [**webpage**](https://alimanjotho.github.io/llm-fqk-t2m/) for more details.
 
 
 
 
-## InterHuman Dataset
-<!-- ![interhuman](https://github.com/tr3e/InterGen/blob/main/interhuman.gif) -->
-
-InterHuman is a comprehensive, large-scale 3D human interactive motion dataset encompassing a diverse range of 3D motions of two interactive people, each accompanied by natural language annotations.
-
-<p float="left">
-  <img src="./assets/interhuman.gif" width="900" />
-</p>
-
-It is made available under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license. You can access the dataset in our [webpage](https://tr3e.github.io/intergen-page/) with the google drive link for **non-commercial purposes**, as long as you give appropriate credit by **citing our paper** and **indicating any changes** that you've made. The redistribution of the dataset is **prohibited**. 
+![teaser](assets/./assets/model.png)
 
 
 
 ## Getting started
 
-This code was tested on `Windows 11 24H2` and requires:
+This code was tested on `Windows11 24H2` and requires:
 
-* Python 3.8
+* Python 3.8.0
+* PyTorch 1.13.1+cu117
 * conda3 or miniconda3
-* CUDA capable GPU (one is enough)
 
-### 1. Setup environment
+### 1. Setup FFMPEG
+* Download ffmpeg from https://www.ffmpeg.org/download.html#build-windows
+* Extract it in `C:\ffmpeg`.
+* Add `C:\ffmpeg\bin` in `PATH` environment variable.
 
+
+### 2. Setup miniconda environment
 ```shell
-conda create --name coshmdm
+conda create -n coshmdm python==3.8.0
 conda activate coshmdm
+python -m spacy download en_core_web_sm
 pip install -r requirements.txt
 ```
 
-### 2. Get data
+* Download dependencies:
 
+```bash
+bash protos/smpl_files.sh
+bash protos/glove.sh
+bash protos/t2m_evaluators.sh
+```
+
+
+
+### 3. Get datasets
 
 Download the data from [webpage](https://tr3e.github.io/intergen-page/). And put them into ./data/.
 
@@ -56,8 +58,24 @@ Download the data from [webpage](https://tr3e.github.io/intergen-page/). And put
 ```
 
 
-## Demo
 
+
+
+### 4. Get the pretrained models
+
+* Download the pretrained models and place then unzip and place them in `./checkpoints/`. 
+
+* **InterHuman** ([coshmdm.ckpt](https://drive.google.com/file/d/1JrVp4zO-gOYJAadhF1i_JemJje7Wzuw6/view?usp=sharing))
+* **BERT** ([bert.ckpt](https://drive.google.com/file/d/1SHCRcE0es31vkJMLGf9dyLe7YsWj7pNL/view?usp=sharing))
+
+Put coshmdm.ckpt under .\checkpoints\
+Put bert.ckpt under .\eval_model\
+
+
+
+
+
+## Demo
 
 
 ### 1. Download the checkpoint
@@ -93,7 +111,6 @@ The results will be rendered and put in ./results/
 
 ## Train
 
-
 Modify config files ./configs/model.yaml ./configs/datasets.yaml and ./configs/train.yaml, and then run:
 
 ```shell
@@ -102,8 +119,6 @@ python tools/train.py
 
 
 ## Evaluation
-
-
 
 ### 1. Modify the configs
 Modify config files ./configs/model.yaml and ./configs/datasets.yaml
@@ -134,7 +149,6 @@ If you find our work useful in your research, please consider citing:
   publisher={IEEE}
 }
 ```
-
 
 
 
