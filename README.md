@@ -6,9 +6,9 @@ The official PyTorch implementation of the paper [**"CoShMDM: Contact and Shape 
 Please visit our [**webpage**](https://alimanjotho.github.io/coshmdm/) for more details.
 
 
+![teaser](./assets/fig-additional-qualitative-1.png)
 
-
-![teaser](./assets/model.png)
+![model](./assets/model.png)
 
 
 
