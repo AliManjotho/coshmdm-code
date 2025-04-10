@@ -2,7 +2,7 @@
 ### [Project Page](https://alimanjotho.github.io/coshmdm/) | [Ali Asghar Manjotho](https://github.com/AliManjotho), Tekie Tsegay Tewolde, Ramadhani Ally Duma, Zhendong Niu.</br>
 
 
-Official PyTorch implementation for [LLM-Guided Fuzzy Kinematic Modeling for Resolving Kinematic Uncertainties and Linguistic Ambiguities in Text-to-Motion Generation](https://alimanjotho.github.io/coshmdm/).
+Official PyTorch implementation for [CoShMDM: Contact and Shape Aware Latent Motion Diffusion Model for Human Interaction Generation](https://alimanjotho.github.io/coshmdm/).
 
 
 <p float="left">

@@ -1,0 +1,71 @@
+conda create --name intergen python==3.8
+conda activate intergen
+
+Install PyTorch 1.13.1 + cu117
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+
+pip install -r requirements.txt
+pip install trimesh h5py chumpy
+
+
+Run CMD as Administrator
+
+"C:\Program Files\Blender Foundation\Blender 4.3\4.3\python\bin\python.exe" -m ensurepip --upgrade
+"C:\Program Files\Blender Foundation\Blender 4.3\4.3\python\bin\python.exe" -m pip install matplotlib shortuuid --target="C:\Program Files\Blender Foundation\Blender 4.3\4.3\scripts\modules"
+
+"C:\Program Files\Blender Foundation\Blender 4.3\4.3\python\bin\python.exe" -m pip install --upgrade pip --target="C:\Program Files\Blender Foundation\Blender 4.3\4.3\scripts\modules"
+
+
+python -m tools.infer --text_prompt "Two persons doing high five" --num_repetitions 3
+
+python -m visualize.render_mesh --input_path ./results/Two_persons_doing_high_five/ --repetition_num 0
+
+
+
+
+
+python -m tools.infer --text_prompt "In an intense boxing match, one is continuously punching while the other is defending and counterattacking." --num_repetitions 3
+
+python -m visualize.render_mesh --input_path ./results/In_an_intense_boxing_match,_one_is_continuously_/ --repetition_num 0
+
+python -m visualize.render_mesh --input_path ./results/In_an_intense_boxing_match,_one_is_continuously_/ --repetition_num 0
+
+
+
+
+
+python -m tools.infer --text_prompt "one person moves closer, attempting to pierce the other person's body with a sharp object, the other person blocks the attack with a sword and retreats." --num_repetitions 3
+
+python -m visualize.render_mesh --input_path ./results/one_person_moves_closer,_attempting_to_pierce_th/ --repetition_num 2
+
+
+python -m tools.infer --text_prompt "the first one eagerly rushes to the other person and places the left hand on their shoulder." --num_repetitions 10
+
+python -m visualize.render_mesh --input_path ./results/the_first_one_eagerly_rushes_to_the_other_person/ --repetition_num 2
+
+
+python -m tools.infer --text_prompt "the first person continues to shake the second vigorously, and the second helplessly moves her head side to side." --num_repetitions 5
+
+
+
+python -m tools.infer --text_prompt "the first one adjusts body posture by crossing legs and stretching arms, while the second one takes a photograph of the first one by moving one step left." --num_repetitions 5
+
+
+python -m tools.infer --text_prompt "two people greet each other by shaking hands." --num_repetitions 10
+python -m visualize.render_mesh --input_path ./results/two_people_greet_each_other_by_shaking_hands/ --repetition_num 0
+
+
+python -m tools.infer --text_prompt "one approaches the other and gives them a hug. the other rejects the hug and moves away to another location." --num_repetitions 10
+python -m visualize.render_mesh --input_path ./results/one_person_moves_closer,_attempting_to_pierce_th/ --repetition_num 3
+
+
+python -m tools.infer --text_prompt "one person attacks twice by lifting the right leg and kicking, while the other retreats by moving backwards with the left leg to avoid the attack." --num_repetitions 10
+python -m visualize.render_mesh --input_path ./results/one_person_attacks_twice_by_lifting_the_right_le/ --repetition_num 0
+
+
+
+python -m tools.infer --text_prompt "two humans stands straight and raise one arm while repeatedly exchanging greetings with each other." --num_repetitions 5
+
+python -m visualize.render_mesh --input_path ./results/two_humans_stands_straight_and_raise_one_arm_whi/ --repetition_num 0
+
+

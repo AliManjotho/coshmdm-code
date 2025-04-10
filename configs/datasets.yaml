@@ -1,0 +1,41 @@
+interhuman:
+    NAME: interhuman
+    DATA_ROOT: ./data/interhuman_processed
+    MOTION_REP: global
+    MODE: train
+    CACHE: True
+
+interhuman_val:
+    NAME: interhuman
+    DATA_ROOT: ./data/interhuman_processed
+    MOTION_REP: global
+    MODE: val
+    CACHE: True
+
+interhuman_test:
+    NAME: interhuman
+    DATA_ROOT: ./data/interhuman_processed
+    MOTION_REP: global
+    MODE: test
+    CACHE: True
+
+interx:
+    NAME: interx
+    DATA_ROOT: ./data/interx_processed
+    MOTION_REP: global
+    MODE: train
+    CACHE: True
+
+interx_val:
+    NAME: interx
+    DATA_ROOT: ./data/interx_processed
+    MOTION_REP: global
+    MODE: val
+    CACHE: True
+
+interx_test:
+    NAME: interx
+    DATA_ROOT: ./data/interx_processed
+    MOTION_REP: global
+    MODE: test
+    CACHE: True
