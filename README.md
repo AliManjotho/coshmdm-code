@@ -32,6 +32,7 @@ conda create -n coshmdm python==3.8.0
 conda activate coshmdm
 python -m spacy download en_core_web_sm
 pip install -r requirements.txt
+pip install trimesh h5py chumpy
 ```
 
 * Download dependencies:
@@ -56,22 +57,6 @@ Download the data from [webpage](https://tr3e.github.io/intergen-page/). And put
 ./motions_processed     //Processed motion data with joint positions and rotations (6D representation) of SMPL 22 joints kinematic structure.
 ./split                 //Train-val-test split.
 ```
-
-
-
-
-
-### 4. Get the pretrained models
-
-* Download the pretrained models and place then unzip and place them in `./checkpoints/`. 
-
-* **InterHuman** ([coshmdm.ckpt](https://drive.google.com/file/d/1JrVp4zO-gOYJAadhF1i_JemJje7Wzuw6/view?usp=sharing))
-* **BERT** ([bert.ckpt](https://drive.google.com/file/d/1SHCRcE0es31vkJMLGf9dyLe7YsWj7pNL/view?usp=sharing))
-
-Put coshmdm.ckpt under .\checkpoints\
-Put bert.ckpt under .\eval_model\
-
-
 
 
 
@@ -103,11 +88,30 @@ Two people embrace each other.
 ...
 ```
 
-### 4. Run
+
+## 4. Interaction Generation
+
+#### 4.1 Generate from a single prompt
+
 ```shell
-python tools/infer.py
+python -m tools.infer --text_prompt "In an intense boxing match, one is continuously punching while the other is defending and counterattacking." --num_repetitions 3
 ```
-The results will be rendered and put in ./results/
+
+#### 4.2 Generate from test set prompts (prompts.txt)
+
+```shell
+python -m tools.infer --num_repetitions 5
+```
+
+#### 4.3 Generate from custom text file
+
+```shell
+ppython -m tools.infer --num_repetitions 3 --text_file ./assets/sample_prompts.txt
+```
+
+The results will be rendered and put in ./results/ directory.
+
+
 
 
 ## Train
@@ -130,10 +134,42 @@ python tools/eval.py
 ```
 
 
-## Application
-<p float="left">
-  <img src="./assets/trajectorycontrol.gif" width="900" />
-</p>
+### Rendering SMPL meshes  in Blender
+
+* Download and install blender https://www.blender.org/download/.
+* `{VER}` = your blender version, replace it accordingly.
+* Blender>Preferences>Interface> Check Developer Options
+* Add the following paths to PATH environment variable.
+```shell
+C:\Program Files\Blender Foundation\Blender {VER}
+C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin
+```
+* Run CMD as Administrator and follow these commands:
+```shell
+"C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin\python.exe" -m ensurepip --upgrade
+"C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin\python.exe" -m pip install matplotlib --target="C:\Program Files\Blender Foundation\Blender {VER}\{VER}\scripts\modules"
+"C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin\python.exe" -m pip install hydra-core --target="C:\Program Files\Blender Foundation\Blender {VER}\{VER}\scripts\modules"
+"C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin\python.exe" -m pip install hydra_colorlog --target="C:\Program Files\Blender Foundation\Blender {VER}\{VER}\scripts\modules"
+"C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin\python.exe" -m pip install shortuuid --target="C:\Program Files\Blender Foundation\Blender {VER}\{VER}\scripts\modules"
+"C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin\python.exe" -m pip install omegaconf --target="C:\Program Files\Blender Foundation\Blender {VER}\{VER}\scripts\modules"
+"C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin\python.exe" -m pip install moviepy==1.0.3 --upgrade  --target="C:\Program Files\Blender Foundation\Blender {VER}\{VER}\scripts\modules"
+```
+
+* Download Blender Animation Files:
+https://drive.google.com/file/d/1EbUkwPCt7eB9HAZXtM-nCxsztkfsRImD/view?usp=sharing
+
+* To create SMPL mesh per frame run:
+
+```shell
+python -m visualize.render_mesh --input_path ./results/In_an_intense_boxing_match,_one_is_continuously_/ --repetition_num 0
+```
+
+**This script outputs:**
+* `p1_smpl_params.npy` and `p2_smpl_params.npy` - SMPL parameters (thetas, root translations, vertices and faces)
+* `obj_rep###` - Mesh per frame in `.obj` format.
+
+
+
 
 
 
