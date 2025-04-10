@@ -155,9 +155,6 @@ C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin
 "C:\Program Files\Blender Foundation\Blender {VER}\{VER}\python\bin\python.exe" -m pip install moviepy==1.0.3 --upgrade  --target="C:\Program Files\Blender Foundation\Blender {VER}\{VER}\scripts\modules"
 ```
 
-* Download Blender Animation Files:
-https://drive.google.com/file/d/1EbUkwPCt7eB9HAZXtM-nCxsztkfsRImD/view?usp=sharing
-
 * To create SMPL mesh per frame run:
 
 ```shell
@@ -169,7 +166,11 @@ python -m visualize.render_mesh --input_path ./results/In_an_intense_boxing_matc
 * `obj_rep###` - Mesh per frame in `.obj` format.
 
 
+## Blender Addon for CoShMDM
 
+![teaser](./assets/addon-1.png)
+![teaser](./assets/addon-2.png)
+![teaser](./assets/addon-3.png)
 
 
 
