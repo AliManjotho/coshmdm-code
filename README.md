@@ -77,13 +77,14 @@ Put bert.ckpt under .\eval_model\
 
 ## Demo
 
-
-### 1. Download the checkpoint
+### 1. Download checkpoints and evaluation models
 Run the shell script:
 
 ```shell
 ./prepare/download_pretrain_model.sh
+./prepare/download_evaluation_model.sh
 ```
+This will download coshmdm.ckpt under .\checkpoints\ and bert.ckpt under .\eval_model\.
 
 ### 2. Modify the configs
 Modify config files ./configs/model.yaml and ./configs/infer.yaml
