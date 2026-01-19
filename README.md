@@ -31,12 +31,14 @@ This code was tested on `Windows11 24H2` and requires:
 conda create -n coshmdm python==3.8.0
 conda activate coshmdm
 
-If needed
 pip install spacy==3.7.5
 
 python -m spacy download en_core_web_sm
 pip install -r requirements.txt
 pip install trimesh h5py chumpy
+
+python -m pip uninstall -y lightning lightning-cloud lightning-app
+pip install lightning==1.9.1 lightning-cloud==0.5.26
 ```
 
 * Download dependencies:
