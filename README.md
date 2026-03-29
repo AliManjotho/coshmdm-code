@@ -22,14 +22,15 @@
 
 <p align="center">
   <a href="https://alimanjotho.github.io/coshmdm/">
-    <img src="https://img.shields.io/badge/Project-Website-blue?style=flat-square&logo=googlechrome" alt="Project Website">
+    <img src="https://img.shields.io/badge/Project-Website-blue?style=flat-square&logo=github" alt="Project Website">
   </a>
+   
   <a href="https://www.linkedin.com/in/alimanjotho/">
-    <img src="https://img.shields.io/badge/Hugging%20Face-Demo-yellow?style=flat-square&logo=linkedin" alt="LinkedIn Profile">
+    <img src="https://img.shields.io/badge/LinkedIn Profle?style=flat-square&logo=linkedin" alt="LinkedIn Profile">
   </a>
   <br>
   <a href="ali_manjotho">
-    <img src="https://img.shields.io/badge/WeChat-Group-green?style=flat-square&logo=wechat" alt="WeChat ID">
+    <img src="https://img.shields.io/badge/WeChat-ID-green?style=flat-square&logo=wechat" alt="WeChat ID">
   </a>
   <a href="https://discord.gg/BSJpG8TQSg">
     <img src="https://img.shields.io/badge/Discord-Community-5865F2?style=flat-square&logo=discord" alt="Discord Community">
