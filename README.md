@@ -8,25 +8,24 @@
   <br>
   
   <p>
-    <a href="https://github.com/AliManjotho">Ali Asghar Manjotho</a><sup>1,2 ★</sup>&nbsp;
-    <a href="https://wyattz23.github.io">Tekie Tsegay Tewolde</a><sup>1 ★</sup>&nbsp;
-    <a href="https://upup-wei.github.io/">Ramadhani Ally Duma</a><sup>3 ★</sup>&nbsp;
-    <a href="https://Y-Research-SBU.github.io/PosterGen">Zhendong Niu</a><sup>1 ★</sup>&nbsp;
+    <a href="https://github.com/AliManjotho">Ali Asghar Manjotho</a><sup>1,2</sup>&nbsp;
+    <a href="https://wyattz23.github.io">Tekie Tsegay Tewolde</a><sup>1</sup>&nbsp;
+    <a href="https://upup-wei.github.io/">Ramadhani Ally Duma</a><sup>3</sup>&nbsp;
+    <a href="https://Y-Research-SBU.github.io/PosterGen">Zhendong Niu</a><sup>1</sup>&nbsp;
   </p>
 
   <p>
     <sup>1</sup> Beijing Institute of Technology &nbsp;&nbsp; 
     <sup>2</sup> Mehran Univerity of Engineering and Technology, Jamshoro, Pakistan &nbsp;&nbsp;
     <sup>3</sup> University of Dodoma, Tanzania &nbsp;&nbsp; <br>
-    <sup>★</sup> Equal Contribution <br>
   </p>
 
 <p align="center">
   <a href="https://alimanjotho.github.io/coshmdm/">
     <img src="https://img.shields.io/badge/Project-Website-blue?style=flat-square&logo=googlechrome" alt="Project Website">
   </a>
-  <a href="https://huggingface.co/spaces/Y-Research-Group/PosterGen">
-    <img src="https://img.shields.io/badge/Hugging%20Face-Demo-yellow?style=flat-square&logo=huggingface" alt="Hugging Face">
+  <a href="https://www.linkedin.com/in/alimanjotho/">
+    <img src="https://img.shields.io/badge/Hugging%20Face-Demo-yellow?style=flat-square&logo=linkedin" alt="LinkedIn Profile">
   </a>
   <br>
   <a href="ali_manjotho">
