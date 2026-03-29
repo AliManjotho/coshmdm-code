@@ -226,12 +226,15 @@ After corresponding OBJ files for generated in P1 and P2 folders, you can instal
 If you find our work helpful in your research, please consider citing the following paper:
 
 ```
-@article{manjotho2025coshmdm,
+@article{manjotho2026coshmdm,
   title={CoShMDM: Contact and Shape-Aware Latent Motion Diffusion Model for Human Interaction Generation},
   author={Ali Asghar Manjotho, Tekie Tsegay Tewolde, Ramadhani Ally Duma, Zhendong Niu},
   journal={IEEE Transactions on Visualization and Computer Graphics},
-  year={2025},
-  publisher={IEEE}
+  volume={32}.
+  number={4}.
+  year={2026},
+  publisher={IEEE},
+  doi={10.1109/TVCG.2026.3675725}
 }
 ```
 
