@@ -230,9 +230,10 @@ If you find our work helpful in your research, please consider citing the follow
   title={CoShMDM: Contact and Shape-Aware Latent Motion Diffusion Model for Human Interaction Generation},
   author={Ali Asghar Manjotho, Tekie Tsegay Tewolde, Ramadhani Ally Duma, Zhendong Niu},
   journal={IEEE Transactions on Visualization and Computer Graphics},
-  volume={32}.
-  number={4}.
+  volume={32},
+  number={4},
   year={2026},
+  pages={1-14},
   publisher={IEEE},
   doi={10.1109/TVCG.2026.3675725}
 }
