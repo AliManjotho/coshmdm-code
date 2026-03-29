@@ -29,9 +29,9 @@
     <img src="https://img.shields.io/badge/LinkedIn Profle?style=flat-square&logo=linkedin" alt="LinkedIn Profile">
   </a>
   <br>
-  <a href="ali_manjotho">
-    <img src="https://img.shields.io/badge/WeChat-ID-green?style=flat-square&logo=wechat" alt="WeChat ID">
-  </a>
+
+  <img src="https://img.shields.io/badge/WeChat-ali_manjotho-green?style=flat-square&logo=wechat" alt="WeChat ID">
+  
   <a href="https://discord.gg/BSJpG8TQSg">
     <img src="https://img.shields.io/badge/Discord-Community-5865F2?style=flat-square&logo=discord" alt="Discord Community">
   </a>
