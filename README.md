@@ -26,15 +26,12 @@
   </a>
    
   <a href="https://www.linkedin.com/in/alimanjotho/">
-    <img src="https://img.shields.io/badge/LinkedIn Profle?style=flat-square&logo=linkedin" alt="LinkedIn Profile">
+    <img src="https://img.shields.io/badge/LinkedIn-Profle?style=flat-square&logo=linkedin" alt="LinkedIn Profile">
   </a>
   <br>
 
-  <img src="https://img.shields.io/badge/WeChat-ali_manjotho-green?style=flat-square&logo=wechat" alt="WeChat ID">
-  
-  <a href="https://discord.gg/BSJpG8TQSg">
-    <img src="https://img.shields.io/badge/Discord-Community-5865F2?style=flat-square&logo=discord" alt="Discord Community">
-  </a>
+  <img src="https://img.shields.io/badge/WeChat-ali__manjotho-green?style=flat-square&logo=wechat" alt="WeChat ID">
+
 </p>
 
 </div>
