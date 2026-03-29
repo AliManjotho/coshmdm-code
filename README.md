@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img src="./assets/logo.png" height="100" style="object-fit: contain;">
+  <img src="./assets/logo.png" height="110" style="object-fit: contain;">
 
   <h2>CoShMDM: Contact and Shape-Aware Latent Motion Diffusion Model for Human Interaction Generation</h2>
   <!-- <h4>🌟 🌟</h4> -->
@@ -38,7 +38,9 @@
 
 </div>
 
-
+<div align="center">
+  <hr />
+</div>
 The official PyTorch implementation of the paper [**"CoShMDM: Contact and Shape Aware Latent Motion Diffusion Model for Human Interaction Generation"**](https://alimanjotho.github.io/coshmdm/).
 
 Please visit our [**webpage**](https://alimanjotho.github.io/coshmdm/) for more details.
