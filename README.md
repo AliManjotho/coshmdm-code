@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img src="./resource/logo.png" height="100" style="object-fit: contain;">
+  <img src="./assets/logo.png" height="100" style="object-fit: contain;">
 
   <h2>CoShMDM: Contact and Shape-Aware Latent Motion Diffusion Model for Human Interaction Generation</h2>
   <!-- <h4>🌟 🌟</h4> -->
