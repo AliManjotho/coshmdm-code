@@ -41,6 +41,7 @@
 <div align="center">
   <hr />
 </div>
+
 The official PyTorch implementation of the paper [**"CoShMDM: Contact and Shape Aware Latent Motion Diffusion Model for Human Interaction Generation"**](https://alimanjotho.github.io/coshmdm/).
 
 Please visit our [**webpage**](https://alimanjotho.github.io/coshmdm/) for more details.
